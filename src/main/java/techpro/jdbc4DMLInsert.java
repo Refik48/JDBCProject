@@ -70,6 +70,11 @@ public class jdbc4DMLInsert {
      	int[] s3 = st.executeBatch();
      	System.out.println(s3.length + " satir eklendi..");
 
+		// 3. YONTEM
+		//-----------------------------------------------------
+		// batch metoduyla birlikte PreparedStatement kullanmak en efektif yontemdir.
+		// bir sonraki ornekte bunu gerceklestirecegiz.
+
 		con.close();
 		st.close();
 		//rs.close();
